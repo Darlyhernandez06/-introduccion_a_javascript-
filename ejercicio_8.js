@@ -12,6 +12,7 @@ function evaluarRendimiento() {
     let puntuacion = parseFloat(document.getElementById("puntuacionInput").value);
     let nivel;
     let cantidadDinero;
+    let resultadoElement = document.getElementById("resultado");
 
     if (puntuacion === 0.0) {
         nivel = "Inaceptable";
