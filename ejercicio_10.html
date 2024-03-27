@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Pizza</title>
+</head>
+<body>
+    <h1>Menú de Pizza</h1>
+    <label for="tipoPizza">¿Qué tipo de pizza desea? (vegetariana/no vegetariana)</label>
+    <select id="tipoPizzaSelect">
+    <option value="vegetariana">Vegetariana</option>
+    <option value="no_vegetariana">No vegetariana</option>
+    </select>
+    <br>
+    <div id="ingredientesContainer" style="display: none;">
+    <label for="ingredientesPizza">Elija un ingrediente:</label>
+    <select id="ingredientesPizzaSelect">
+    </select>
+    </div>
+    <br>
+    <button onclick="mostrarIngredientes()">Mostrar Ingredientes</button>
+    <p id="resultado"></p>
+    
+    <script src="ejercicio_10.js" class="js"></script>
+</body>
+</html>
