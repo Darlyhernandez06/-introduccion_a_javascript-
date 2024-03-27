@@ -4,19 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupos de alumnos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px #FF00FF;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #FF00FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ab03ab;
+        }
+    </style>
 </head>
 <body>
-    <h1>Grupos de alumnos</h1>
-    <label for="nombre">Ingrese su nombre:</label>
-    <input type="text" id="nombreInput">
-    <br><br>
-    <label for="sexo">Seleccione su sexo</label>
-    <select id="sexoInput">
+    <div class="container">
+        <h1>Grupos de alumnos</h1>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombreInput">
+        <br><br>
+        <label for="sexo">Seleccione su sexo</label>
+        <select id="sexoInput">
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
-    </select><br><br>
-    <button onclick="determinarGrupo()">Determinar Grupo</button>
-    <p id="resultado"></p>
+        </select><br><br>
+        <button onclick="determinarGrupo()">Determinar Grupo</button>
+        <p id="resultado"></p>
+    </div>
     
     <script src="ejercicio_6.js" class="js"></script>
 </body>

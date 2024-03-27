@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px #FF00FF;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #FF00FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ab03ab;
+        }
+    </style>
 </head>
 <body>
-    <h1>Menú de Pizza</h1>
-    <label for="tipoPizza">¿Qué tipo de pizza desea? (vegetariana/no vegetariana)</label>
-    <select id="tipoPizzaSelect">
-    <option value="vegetariana">Vegetariana</option>
-    <option value="no_vegetariana">No vegetariana</option>
-    </select>
-    <br>
-    <div id="ingredientesContainer" style="display: none;">
-    <label for="ingredientesPizza">Elija un ingrediente:</label>
-    <select id="ingredientesPizzaSelect">
-    </select>
+    <div class="container">
+        <h1>Menú de Pizza</h1>
+        <label for="tipoPizza">¿Qué tipo de pizza desea? (vegetariana/no vegetariana)</label>
+        <select id="tipoPizzaSelect">
+            <option value="vegetariana">Vegetariana</option>
+            <option value="no_vegetariana">No vegetariana</option>
+        </select>
+        <br><br>
+        <div id="ingredientesContainer" style="display: none;">
+            <label for="ingredientesPizza">Elija un ingrediente:</label>
+            <select id="ingredientesPizzaSelect"></select>
+        </div>
+        <br><br>
+        <button onclick="mostrarIngredientes()">Mostrar Ingredientes</button>
+        <p id="resultado"></p>
     </div>
-    <br>
-    <button onclick="mostrarIngredientes()">Mostrar Ingredientes</button>
-    <p id="resultado"></p>
     
     <script src="ejercicio_10.js" class="js"></script>
 </body>

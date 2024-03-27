@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora Básica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px #FF00FF;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #FF00FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ab03ab;
+        }
+    </style>
 </head>
 <body>
-    <h1>Calculadora Básica</h1>
-    <label for="numero_1">Primer número:</label>
-    <input type="number" id="num1"><br>
-    <label for="numero_2">Segundo número:</label>
-    <input type="number" id="num2"><br>
-    <button onclick="realizarOperaciones()">Calcular</button>
-    
-    <h2>Resultados:</h2>
-    <p id="suma"></p>
-    <p id="resta"></p>
-    <p id="multiplicacion"></p>
-    <p id="division"></p>
+    <div class="container">
+        <h1>Calculadora Básica</h1>
+        <label for="numero_1">Primer número:</label>
+        <input type="number" id="num1"><br>
+        <label for="numero_2">Segundo número:</label>
+        <input type="number" id="num2"><br>
+        <button onclick="realizarOperaciones()">Calcular</button>
+        <h2>Resultados:</h2>
+        <p id="suma"></p>
+        <p id="resta"></p>
+        <p id="multiplicacion"></p>
+        <p id="division"></p>
+    </div>
     
     <script src="ejercicio_11.js" class="js"></script>
 </body>
