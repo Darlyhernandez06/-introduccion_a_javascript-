@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validador de Números en Punto Flotante</title>
+    <title>Calculadora de Descuento en Farmacia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
             background-color: #f9f9f9;
             box-shadow: 0 0 10px #FF00FF;
         }
-        input[type="text"] {
+        input[type="number"] {
             width: 100%;
             padding: 8px;
             margin: 5px 0;
@@ -43,13 +43,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Validador de Números en Punto Flotante</h1>
-        <label for="numero">Ingrese un número:</label>
-        <input type="text" id="numero">
-        <button onclick="validarNumero()">Validar</button>
-        <p id="resultado"></p>
+        <h1>Calculadora de Descuento en Farmacia</h1>
+        <label for="costoMedicamentos">Costo de los medicamentos:</label>
+        <input type="number" id="costoMedicamentos">
+        <button onclick="calcularDescuento()">Calcular Descuento</button>
+        <p id="descuento"></p>
+        <p id="precioFinal"></p>
     </div>
 
-    <script src="ejercicio_24.js" class="js"></script>
+    <script src="ejercicio_25.js" class="js"></script>
 </body>
 </html>
