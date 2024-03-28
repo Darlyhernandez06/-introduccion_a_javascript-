@@ -6,17 +6,17 @@
 
 function calcularPromedioFinal() {
     // Obtener las calificaciones de los tres parciales, el examen final y el trabajo final
-    let parcial_1 = parseFloat(document.getElementById("parcial1").value);
-    let parcial_2 = parseFloat(document.getElementById("parcial2").value);
-    let parcial_3 = parseFloat(document.getElementById("parcial3").value);
-    let examen_final = parseFloat(document.getElementById("examenFinal").value);
-    let trabajo_final = parseFloat(document.getElementById("trabajoFinal").value);
+    let parcial1 = parseFloat(document.getElementById("parcial1").value);
+    let parcial2 = parseFloat(document.getElementById("parcial2").value);
+    let parcial3 = parseFloat(document.getElementById("parcial3").value);
+    let examenfinal = parseFloat(document.getElementById("examenFinal").value);
+    let trabajofinal = parseFloat(document.getElementById("trabajoFinal").value);
 
     // Calcular el promedio de los tres parciales
-    let promedioParciales = (parcial_1 + parcial_2 + parcial_3) /3;
+    let promedioParciales = (parcial1 + parcial2 + parcial3) /3;
 
     // Calcular el promedio final según los porcentajes dados
-    let promedioFinal = 0.55 * promedioParciales + 0.3 *  examen_final  + 0.15 * trabajo_final;
+    let promedioFinal = 0.55 * promedioParciales + 0.3 *  examenfinal  + 0.15 * trabajofinal;
 
     // Mostrar el promedio final en la página HTML
     document.getElementById("promedioFinal").innerText = "El promedio final de la materia es: " + promedioFinal.toFixed(2);

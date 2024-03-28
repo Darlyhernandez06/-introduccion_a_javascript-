@@ -3,18 +3,18 @@
 // excepciones y el mensaje debe ser personalizado.
 
 function dividir() {
-    let numero_1 = parseFloat(document.getElementById("numero1").value);
-    let numero_2 = parseFloat(document.getElementById("numero2").value);
+    let numero1 = parseFloat(document.getElementById("numero1").value);
+    let numero2 = parseFloat(document.getElementById("numero2").value);
     let resultadoElement = document.getElementById("resultado");
 
     try {
         // Verificar si el divisor es cero
-        if (numero_2 === 0) {
+        if (numero2 === 0) {
             throw new Error("¡Error! No se puede dividir por cero.");
         }
         
         // Realizar la división
-        let resultado = numero_1 / numero_2;
+        let resultado = numero1 / numero2;
 
         // Mostrar el resultado
         resultadoElement.textContent = `El resultado de la división es: ${resultado}`;

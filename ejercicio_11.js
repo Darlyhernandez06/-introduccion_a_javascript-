@@ -2,14 +2,14 @@
 
 function realizarOperaciones() {
     // Obtener los números ingresados por el usuario
-    let numero_1 = parseFloat(document.getElementById("num1").value);
-    let numero_2 = parseFloat(document.getElementById("num2").value);
+    let numero1 = parseFloat(document.getElementById("num1").value);
+    let numero2 = parseFloat(document.getElementById("num2").value);
 
      // Calcular los resultados de las operaciones
-    let suma = numero_1 + numero_2;
-    let resta = numero_1 - numero_2;
-    let multiplicacion = numero_1 * numero_2;
-    let division = numero_1 / numero_2;
+    let suma = numero1 + numero2;
+    let resta = numero1 - numero2;
+    let multiplicacion = numero1 * numero2;
+    let division = numero1 / numero2;
 
      // Mostrar los resultados en el HTML
      document.getElementById("suma").innerText = "Suma: " + suma;
@@ -17,7 +17,7 @@ function realizarOperaciones() {
      document.getElementById("multiplicacion").innerText = "Multiplicación: " + multiplicacion;
      
      // Verificar si el segundo número es cero antes de mostrar la división
-     if (numero_2 === 0) {
+     if (numero2 === 0) {
          document.getElementById("division").innerText = "División: No se puede dividir por cero";
      } else {
          document.getElementById("division").innerText = "División: " + division;

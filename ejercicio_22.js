@@ -5,15 +5,15 @@ function calcularPagoLlamada() {
     let duracionLlamada = parseFloat(document.getElementById("duracionLlamada").value);
 
     // Calcular el costo total de la llamada (sin IVA)
-    let costo_SinIVA = duracionLlamada * 355;
+    let costoSinIVA = duracionLlamada * 355;
 
     // Calcular el IVA (20% del costo sin IVA)
-    let iva =  0.2 * costo_SinIVA;
+    let iva =  0.2 * costoSinIVA;
 
     // Calcular el costo total de la llamada (incluyendo IVA)
-    let costoTotal = costo_SinIVA + iva;
+    let costoTotal = costoSinIVA + iva;
 
-    document.getElementById("resultado").innerText = "El costo total de la llamada sin IVA es: $" + costo_SinIVA.toFixed(2) + "\n" +
+    document.getElementById("resultado").innerText = "El costo total de la llamada sin IVA es: $" + costoSinIVA.toFixed(2) + "\n" +
     "El costo total de la llamada con IVA es: $" + iva.toFixed(2) + "\n" +
     "El costo total de la llamada es: $" + costoTotal.toFixed(2);
 

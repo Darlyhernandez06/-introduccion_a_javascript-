@@ -1,12 +1,12 @@
 // 13. Escribir un programa que lea 4 números y calcule la media. 
 
 function calcularMedia() {
-    let Numero_1 = parseFloat(document.getElementById("num1").value);
-    let Numero_2 = parseFloat(document.getElementById("num2").value);
-    let Numero_3 = parseFloat(document.getElementById("num3").value);
-    let Numero_4 = parseFloat(document.getElementById("num4").value);
+    let Numero1 = parseFloat(document.getElementById("num1").value);
+    let Numero2 = parseFloat(document.getElementById("num2").value);
+    let Numero3 = parseFloat(document.getElementById("num3").value);
+    let Numero4 = parseFloat(document.getElementById("num4").value);
 
-    let media = (Numero_1 + Numero_2 + Numero_3 + Numero_4) / 4;
+    let media = (Numero1 + Numero2 + Numero3 + Numero4) / 4;
 
     document.getElementById("resultado").innerText = "La media de los números ingresados es:" + media;
 }

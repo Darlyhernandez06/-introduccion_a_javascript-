@@ -11,12 +11,12 @@ function calcular() {
     let Altura = parseFloat(document.getElementById("altura").value);
 
     // Calcular el área de la superficie del cilindro
-    let area_superficie = 2 * Math.PI * Radio * Altura;
-    document.getElementById('areaSuperficie').innerText = "Área de la superficie del cilindro: " + area_superficie.toFixed(2);
+    let areasuperficie = 2 * Math.PI * Radio * Altura;
+    document.getElementById('areaSuperficie').innerText = "Área de la superficie del cilindro: " + areasuperficie.toFixed(2);
 
     // Calcular el área total de la superficie del cilindro
-    let area_total = 2 * Math.PI * Radio * (Radio + Altura);
-    document.getElementById('areaTotal').innerText = "Área total de la superficie del cilindro: " + area_total.toFixed(2);
+    let areatotal = 2 * Math.PI * Radio * (Radio + Altura);
+    document.getElementById('areaTotal').innerText = "Área total de la superficie del cilindro: " + areatotal.toFixed(2);
 
     // Calcular el volumen del cilindro
     let Volumen =  Math.PI * Math.pow(Radio, 2) * Altura;

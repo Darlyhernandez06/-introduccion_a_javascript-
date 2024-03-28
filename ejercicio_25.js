@@ -9,11 +9,11 @@ function calcularDescuento() {
     let descuento = 0.1 * costoMedicamentos;
 
     // Calcular el precio final (costo de los medicamentos menos el descuento)
-    let precio_total = costoMedicamentos - descuento;
+    let preciototal = costoMedicamentos - descuento;
 
     // Mostrar el descuento y el precio final en la página
     document.getElementById("descuento"). innerText = "El descuento de los medicamentos es: $" + descuento.toFixed(2);
-    document.getElementById("precioFinal"). innerText = "El precio total de los medicamentos es: $" + precio_total.toFixed(2);
+    document.getElementById("precioFinal"). innerText = "El precio total de los medicamentos es: $" + preciototal.toFixed(2);
 }
 
 // EXPLICACION DEL EJERCICIO
