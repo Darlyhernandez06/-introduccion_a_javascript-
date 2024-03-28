@@ -3,38 +3,38 @@
 // producto y el total de la compra. 
 
 function calcularTotal() {
-    // Solicitar al usuario que ingrese los precios de los productos
-    const precioProducto1 = parseFloat(prompt("Ingrese el precio del primer producto:"));
-    const precioProducto2 = parseFloat(prompt("Ingrese el precio del segundo producto:"));
-    const precioProducto3 = parseFloat(prompt("Ingrese el precio del tercer producto:"));
-    const precioProducto4 = parseFloat(prompt("Ingrese el precio del cuarto producto:"));
-    const precioProducto5 = parseFloat(prompt("Ingrese el precio del quinto producto:"));
+  // Solicitar al usuario que ingrese los precios de los productos
+  const precioProducto1 = parseFloat(prompt("Ingrese el precio del primer producto:"));
+  const precioProducto2 = parseFloat(prompt("Ingrese el precio del segundo producto:"));
+  const precioProducto3 = parseFloat(prompt("Ingrese el precio del tercer producto:"));
+  const precioProducto4 = parseFloat(prompt("Ingrese el precio del cuarto producto:"));
+  const precioProducto5 = parseFloat(prompt("Ingrese el precio del quinto producto:"));
   
-    const descuentoPrimeros = 0.05; // Descuento del 5% para los dos primeros productos
-    const descuentoUltimos = 0.02;  // Descuento del 2% para los dos últimos productos
+  const descuentoPrimeros = 0.05; // Descuento del 5% para los dos primeros productos
+  const descuentoUltimos = 0.02;  // Descuento del 2% para los dos últimos productos
   
-    // Calcular el precio con descuento para los dos primeros productos
-    const precioConDescuento1 = precioProducto1 * (1 - descuentoPrimeros);
-    const precioConDescuento2 = precioProducto2 * (1 - descuentoPrimeros);
+  // Calcular el precio con descuento para los dos primeros productos
+  const precioConDescuento1 = precioProducto1 * (1 - descuentoPrimeros);
+  const precioConDescuento2 = precioProducto2 * (1 - descuentoPrimeros);
   
-    // Calcular el precio con descuento para los dos últimos productos
-    const precioConDescuento4 = precioProducto4 * (1 - descuentoUltimos);
-    const precioConDescuento5 = precioProducto5 * (1 - descuentoUltimos);
+  // Calcular el precio con descuento para los dos últimos productos
+  const precioConDescuento4 = precioProducto4 * (1 - descuentoUltimos);
+  const precioConDescuento5 = precioProducto5 * (1 - descuentoUltimos);
   
-    // Calcular el total de la compra sumando los precios de todos los productos con y sin descuento
-    const totalCompra = precioConDescuento1 + precioConDescuento2 + precioProducto3 + precioConDescuento4 + precioConDescuento5;
+  // Calcular el total de la compra sumando los precios de todos los productos con y sin descuento
+  const totalCompra = precioConDescuento1 + precioConDescuento2 + precioProducto3 + precioConDescuento4 + precioConDescuento5;
   
-    // Mostrar los resultados mediante alertas
-    alert("Precio a pagar por el primer producto: $" + precioConDescuento1.toFixed(2));
-    alert("Precio a pagar por el segundo producto: $" + precioConDescuento2.toFixed(2));
-    alert("Precio a pagar por el tercer producto: $" + precioProducto3.toFixed(2));
-    alert("Precio a pagar por el cuarto producto: $" + precioConDescuento4.toFixed(2));
-    alert("Precio a pagar por el quinto producto: $" + precioConDescuento5.toFixed(2));
-    alert("Total de la compra: $" + totalCompra.toFixed(2));
+  // Mostrar los resultados mediante alertas
+  alert("Precio a pagar por el primer producto: $" + precioConDescuento1.toFixed(2));
+  alert("Precio a pagar por el segundo producto: $" + precioConDescuento2.toFixed(2));
+  alert("Precio a pagar por el tercer producto: $" + precioProducto3.toFixed(2));
+  alert("Precio a pagar por el cuarto producto: $" + precioConDescuento4.toFixed(2));
+  alert("Precio a pagar por el quinto producto: $" + precioConDescuento5.toFixed(2));
+
+  // Mostrar el resultado
+  document.getElementById("resultado").textContent = "El total de la compra es: $" + totalCompra.toFixed(2);
 }
-  
-// Asociar el evento de clic al botón "Iniciar Cálculo"
-  document.getElementById("startButton").addEventListener("click", calcularTotal);
+   
 
 // EXPLICACION DEL EJERCICIO
 
@@ -52,12 +52,10 @@ function calcularTotal() {
 // Cálculo del total de la compra: Se suman los precios de todos los productos, incluidos los que no tienen descuento y los que tienen descuento, 
 // para obtener el total de la compra. El resultado se guarda en la variable totalCompra.
 
-// Mostrar los resultados mediante alertas: Se utilizan las funciones alert() para mostrar los precios a pagar por cada producto, así como el total 
-// de la compra. Los precios se muestran con dos decimales utilizando el método toFixed(2).
+// Mostrar los resultados mediante alertas: Se utilizan las funciones alert() para mostrar los precios a pagar por cada producto,
+// Los precios se muestran con dos decimales utilizando el método toFixed(2).
 
-// Evento de clic del botón "Iniciar Cálculo": Al final del código, se asocia la función calcularTotal() al evento de clic del botón "Iniciar Cálculo"
-// mediante addEventListener(). Esto significa que cuando el usuario hace clic en el botón, se ejecutará la función calcularTotal(), 
-// iniciando así todo el proceso de cálculo y presentación de resultados.
+// El total de la compra se muestra en la página HTML usando document.getElementById("resultado").textContent.
 
 // La función prompt() es una función incorporada en JavaScript que muestra un cuadro de diálogo al usuario con un mensaje y un campo de entrada donde
 // el usuario puede ingresar texto.
