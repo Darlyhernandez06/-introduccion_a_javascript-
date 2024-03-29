@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Temperatura y Presión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px #FF00FF;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #FF00FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ab03ab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Verificar Temperatura y Presión</h1>
+        <label for="temperatura">Temperatura:</label>
+        <input type="number" id="temperatura" name="temperatura" required>
+        <br>
+        <label for="presion">Presión:</label>
+        <input type="number" id="presion" name="presion" required>
+        <br>
+        <button onclick="verificar()">Verificar</button>
+        <br><br>
+        <div id="resultado"></div>
+    </div>
+    
+    <script src="ejercicio_50.js" class="js"></script>    
+</body>
+</html>
