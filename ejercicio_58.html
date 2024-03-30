@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asignación de Calificaciones</title>
+    <title>Signo Zodiacal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
             background-color: #f9f9f9;
             box-shadow: 0 0 10px #FF00FF;
         }
-        input[type="number"] {
+        input[type="text"] {
             width: 100%;
             padding: 8px;
             margin: 5px 0;
@@ -43,18 +43,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Asignación de Calificaciones</h1>
+        <h1>Signo Zodiacal</h1>
         <div>
-            <label for="calificacion">Ingrese la calificación numérica:</label>
-            <input type="number" id="calificacion">
+            <label for="mes">Ingrese el nombre del mes:</label>
+            <input type="text" id="mesInput">
         </div>
         <div>
-            <button onclick="AsignacionCalificacion()">Asignar Calificación</button>
+            <button onclick="AplicacionSigno()">Determinar Signo</button>
         </div>
         <br><br>
         <div id="resultado"></div>
     </div>
 
-    <script src="ejercicio_57.js" class="js"></script>  
+    <script src="ejercicio_58.js" class="js"></script>  
 </body>
 </html>

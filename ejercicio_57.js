@@ -24,7 +24,6 @@ function AsignacionCalificacion () {
     document.getElementById("resultado").textContent = "Calificación asignada: " + calificacionLiteral;  
 }
 
-
 // EXPLICACION DEL EJERCICIO
 
 // function AsignacionCalificacion () { ... }: se define una función llamada AsignacionCalificacion.
