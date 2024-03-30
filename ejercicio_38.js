@@ -3,7 +3,8 @@
 // parte le corresponde a Lorena? 
 
 function calcularParteLorena() {
-    const totaldeTapas = 1; // Representa el total de tapas de gaseosas para simplificar los cálculos
+    // Representa el total de tapas de gaseosas para simplificar los cálculos
+    const totaldeTapas = 1; 
 
     // Calcular la parte de Martín (2/3 del total)
     const parteMartin = (2/3) * totaldeTapas;

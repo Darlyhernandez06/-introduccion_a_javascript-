@@ -4,7 +4,6 @@
 // minúsculas, se debe validar que solo se pueda ingresar valores alfanuméricos. 
 
 function verificarContraseña() {
-
     // Almacenar la contraseña en una variable
     const contraseñaGuardada = "Hachiko0612";
 

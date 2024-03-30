@@ -11,9 +11,11 @@ function calcularVelocidad() {
     // Convertir el tiempo de minutos a segundos
     let tiempoEnSegundos = 5 * 60; // 1 minuto = 60 segundos
 
+    // Calcular la velocidad (distancia / tiempo)
     let velocidad = distanciaEnMetros / tiempoEnSegundos;
 
-    document.getElementById("Velocidad").innerText = "La velocidad de un proyectil que recorre 2km en 5 minutos es: " + velocidad.toFixed(2) + "metros por segundo";
+    // Mostrar el resultado en el HTML
+    document.getElementById("Velocidad").innerText = "La velocidad de un proyectil que recorre 2km en 5 minutos es: " + velocidad.toFixed(2) + " metros por segundo";
 }
 
 // EXPLICACION DEL EJERCICIO

@@ -2,10 +2,14 @@
 // formula V = 4/3 π r³
 
 function calcularVolumen() {
+    // Obtener el radio de la esfera desde el input
     let radio = parseFloat(document.getElementById("radio").value);
-    let volumen = (4/3) * Math.PI *Math.pow(radio, 3);
+    
+    // Calcular el volumen de la esfera
+    let volumen = (4 / 3) * Math.PI * Math.pow(radio, 3);
 
-    document.getElementById("resultado"). innerText = "El volumen de la esfera es:" + volumen.toFixed(2);
+    // Mostrar el resultado en el HTML
+    document.getElementById("resultado").innerText = "El volumen de la esfera es: " + volumen.toFixed(2);
 }
 
 // EXPLICACION DEL EJERCICIO

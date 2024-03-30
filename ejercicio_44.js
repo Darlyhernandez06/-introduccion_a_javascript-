@@ -1,16 +1,20 @@
 // 44. Realice el siguiente algoritmo para convertir pesos a dolores y a euros, utilizando como constante el valor de una moneda. 
 
 function convertirMoneda() {
-    const MontodePesos = parseFloat(document.getElementById("montoPesos").value);
+    // Obtener el monto en pesos ingresado por el usuario
+    const montoDePesos = parseFloat(document.getElementById("montoPesos").value);
 
-    const ValorDolar = 0.012; // Ejemplo: 1 peso = 0.012 dólares
-    const ValorEuro = 0.011; // Ejemplo: 1 peso = 0.011 euros
+    // Definir los valores de conversión
+    const valorDolar = 0.012; // Ejemplo: 1 peso = 0.012 dólares
+    const valorEuro = 0.011; // Ejemplo: 1 peso = 0.011 euros
 
-    const montoDolares = MontodePesos* ValorDolar;
-    const montoEuros = MontodePesos * ValorEuro;
+    // Calcular el equivalente en dólares y euros
+    const montoDolares = montoDePesos * valorDolar;
+    const montoEuros = montoDePesos * valorEuro;
 
+    // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").textContent = "El equivalente en dólares es: $" + montoDolares.toFixed(2) + "\n" +
-    "El equivalente en euros es: €" + montoEuros.toFixed(2);
+        "El equivalente en euros es: €" + montoEuros.toFixed(2);
 }
 
 // EXPLICACION DEL EJERCICIO

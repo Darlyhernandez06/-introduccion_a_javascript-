@@ -3,16 +3,21 @@
 // usuario su edad e ingresos mensuales y muestre por pantalla si el usuario debe tributar o no. 
 
 function verificarTributacion() {
+    // Obtener los valores de edad e ingresos ingresados por el usuario
     let edad = document.getElementById("edadInput").value;
     let ingresos = document.getElementById("ingresosInput").value;
     let resultadoElement = document.getElementById("resultado");
 
+    // Verificar si la edad es mayor que 16 y los ingresos son mayores o iguales a 1000
     if (edad > 16 && ingresos >= 1000 ) {
-        document.getElementById("resultado").innerText = "Debe tributar.";
+        // Si se cumple la condición, mostrar "Debe tributar."
+        resultadoElement.innerText = "Debe tributar.";
     } else {
-        document.getElementById("resultado").innerText = "No debe tributar.";
+        // Si no se cumple la condición, mostrar "No debe tributar."
+        resultadoElement.innerText = "No debe tributar.";
     }
 }
+
 
 // EXPLICACION DEL EJERCICIO 
 

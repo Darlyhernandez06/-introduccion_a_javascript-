@@ -3,14 +3,23 @@
 // Después de pagar le sobran $91000. ¿Cuánto dinero tenía? 
 
 function calcularDinero() {
-    const costoLlavesHexagonales = 5 * 11500; // Costo de cinco juegos de llaves hexagonales
-    const costoBomba = 1168000; // Costo de la bomba
-    const costoPernos = 3 * 87000; // Costo de tres cajas de pernos
-    const dineroSobrante = 91000; // Dinero que le sobra después de la compra
+    // Costo de cinco juegos de llaves hexagonales
+    const costoLlavesHexagonales = 5 * 11500; 
 
-    const totalGastado = costoLlavesHexagonales + costoBomba + costoPernos; // Calcular el total gastado en la compra
+    // Costo de la bomba
+    const costoBomba = 1168000; 
 
-    const dinerotenia = totalGastado + dineroSobrante; // Calcular el dinero inicial sumando el total gastado al dinero sobrante después de la compra
+    // Costo de tres cajas de pernos
+    const costoPernos = 3 * 87000;
+
+    // Dinero que le sobra después de la compra
+    const dineroSobrante = 91000; 
+
+    // Calcular el total gastado en la compra
+    const totalGastado = costoLlavesHexagonales + costoBomba + costoPernos; 
+
+    // Calcular el dinero inicial sumando el total gastado al dinero sobrante después de la compra
+    const dinerotenia = totalGastado + dineroSobrante; 
 
     // Mostrar el resultado
     document.getElementById("resultado").textContent = "El jefe de obra tenía $" + dinerotenia + " antes de la compra.";

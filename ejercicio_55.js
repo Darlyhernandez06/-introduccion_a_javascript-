@@ -3,36 +3,39 @@
 // descuentos son los siguientes: Tipo A 10% de descuento Tipo B 15% de descuento Tipo C 
 // 20% de descuento. 
 
-function TiendadeHelado () {
+function TiendadeHelado() {
+    // Obtener el tipo de membresía seleccionado
     let Membresía = document.getElementById('tipoMembresia').value;
     let descuento = 0;
 
+    // Determinar el descuento según el tipo de membresía
     if (Membresía === "tipo A") {
         descuento = 0.1; // Aplica un descuento del 10% para la membresía tipo A
     } else if (Membresía === "tipo B") {
         descuento = 0.15; // Aplica un descuento del 15% para la membresía tipo B
-    } else if  (Membresía === "tipo C") {
+    } else if (Membresía === "tipo C") {
         descuento = 0.20; // Aplica un descuento del 20% para la membresía tipo C
     } else {
+        // Si no se ha seleccionado una membresía válida, mostrar un mensaje de alerta y detener la ejecución
         alert("No se ha seleccionado una membresía válida");
-        return; // Detiene la ejecución de la función si no se ha seleccionado una membresía válida
+        return;
     }
 
-    // Obtener el monto de la compra
+    // Obtener el monto de la compra ingresado por el usuario
     let montoCompra = parseFloat(document.getElementById('montoCompra').value);
 
     // Calcular el monto a pagar con el descuento aplicado
     let montoConDescuento = montoCompra * (1 - descuento);
 
-    // Mostrar el resultado en la página
+    // Crear el contenido HTML para mostrar los resultados
     let resultadoHTML = '<p>Monto de la compra: $' + montoCompra.toFixed(2) + '</p>';
     resultadoHTML += '<p>Tipo de membresía: ' + Membresía + '</p>';
     resultadoHTML += '<p>Descuento aplicado: ' + (descuento * 100) + '%</p>';
     resultadoHTML += '<p>Monto a pagar con descuento: $' + montoConDescuento.toFixed(2) + '</p>';
 
+    // Mostrar los resultados en el elemento con id "resultado"
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
-
 
 // EXPLICACION DEL EJERCICIO
 

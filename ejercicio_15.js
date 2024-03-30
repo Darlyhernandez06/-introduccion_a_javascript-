@@ -1,16 +1,16 @@
 // 15. Escribir un programa que calcule la longitud y el área de una circunferencia.
 
-function calcular(){
+function calcular() {
+    // Obtener el radio de la circunferencia ingresado por el usuario
     let radio = parseFloat(document.getElementById("radio").value);
 
-    // Calcular longitud de la circunferencia (2 * pi * radio)
-
+    // Calcular la longitud de la circunferencia (2 * pi * radio)
     let longitud = 2 * Math.PI * radio;
-    document.getElementById("longitud"). innerText = "La longitud de la circuferencia es:" + longitud.toFixed(2);
+    document.getElementById("longitud").innerText = "La longitud de la circunferencia es: " + longitud.toFixed(2);
 
-    // Calcular área de la circunferencia (pi * radio^2)
+    // Calcular el área de la circunferencia (pi * radio^2)
     let area = Math.PI * Math.pow(radio, 2);
-    document.getElementById("area"). innerText = "El area de la circuferencia es:" + area.toFixed(2);
+    document.getElementById("area").innerText = "El área de la circunferencia es: " + area.toFixed(2);
 }
 
 // EXPLICACION DEL EJERCICIO

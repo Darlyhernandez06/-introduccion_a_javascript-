@@ -9,26 +9,35 @@
 // así como la cantidad de dinero que recibirá el usuario. 
 
 function evaluarRendimiento() {
+    // Obtener la puntuación ingresada por el usuario
     let puntuacion = parseFloat(document.getElementById("puntuacionInput").value);
     let nivel;
     let cantidadDinero;
     let resultadoElement = document.getElementById("resultado");
 
+    // Evaluar el rendimiento según la puntuación
     if (puntuacion === 0.0) {
+        // Si la puntuación es 0.0, el rendimiento es "Inaceptable" y no recibe dinero
         nivel = "Inaceptable";
         cantidadDinero = 0;
     } else if (puntuacion === 0.4) {
+        // Si la puntuación es 0.4, el rendimiento es "Aceptable" y recibe 2400€
         nivel = "Aceptable";
         cantidadDinero = 2400 * puntuacion;
     } else if (puntuacion >= 0.6) {
-        nivel = " Meritorio";
+        // Si la puntuación es mayor o igual a 0.6, el rendimiento es "Meritorio" y recibe 2400€
+        nivel = "Meritorio";
         cantidadDinero = 2400 * puntuacion;
     } else {
+        // Si la puntuación no coincide con ninguno de los casos anteriores, es inválida
         nivel = "Puntuación inválida";
         cantidadDinero = 0;
     }
-    document.getElementById("resultado").innerText = "Nivel de rendimiento: " + nivel + "\nCantidad de dinero recibida: " + cantidadDinero + "€";
+    
+    // Mostrar el nivel de rendimiento y la cantidad de dinero recibida
+    resultadoElement.innerText = "Nivel de rendimiento: " + nivel + "\nCantidad de dinero recibida: " + cantidadDinero + "€";
 }
+
 
 // EXPLICACION DEL EJERCICIO 
 

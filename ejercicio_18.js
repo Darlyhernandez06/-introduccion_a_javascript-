@@ -1,13 +1,16 @@
 // 18. Escribir un programa que evalúe la siguiente expresión (a+7*c) / (b+2-a) + 2*b
 
 function evaluarExpresion() {
+    // Obtener los valores de A, B y C desde los inputs
     let valorA = parseFloat(document.getElementById("valorA").value);
     let valorB = parseFloat(document.getElementById("valorB").value);
     let valorC = parseFloat(document.getElementById("valorC").value);
 
+    // Calcular la expresión
     let expresion = (valorA + 7 * valorC) / (valorB + 2 - valorA) + 2 * valorB;
 
-    document.getElementById("resultado").innerText = "El resultado de la expresión es:" + expresion;
+    // Mostrar el resultado en el HTML
+    document.getElementById("resultado").innerText = "El resultado de la expresión es: " + expresion;
 }
 
 // EXPLICACION DEL EJERCICIO

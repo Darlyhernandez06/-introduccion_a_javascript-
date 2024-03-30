@@ -4,21 +4,27 @@
 // El tiempo se encuentra en minutos. Normalmente se mide el volumen en litros y el tiempo en segundos. 
 
 function calcularDeposito() {
+    // Solicitar al usuario que ingrese el radio, la altura y el caudal del depósito
     const radio = parseFloat(prompt("Ingrese el radio del depósito (metros):"));
     const altura = parseFloat(prompt("Ingrese la altura del depósito (metros):"));
     const caudal = parseFloat(prompt("Ingrese el caudal (litros por segundo):"));
 
-    // Calcular el tiempo de llenado
+    // Calcular el tiempo estimado para el llenado del depósito
     const tiempoEstimado = calcularTiempoLlenadoDeposito(radio, altura, caudal);
 
-    // Mostrar el resultado
+    // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").textContent = "El tiempo estimado para el llenado del depósito es de " + tiempoEstimado + " minutos.";
 }
 
 function calcularTiempoLlenadoDeposito(radio, altura, caudal) {
+    // Calcular el volumen del depósito
     const volumen = Math.PI * Math.pow(radio, 2) * altura;
+
+    // Calcular el tiempo de llenado en segundos y convertirlo a minutos
     const tiempoSegundos = volumen / caudal;
     const tiempoMinutos = tiempoSegundos / 60;
+
+    // Devolver el tiempo de llenado en minutos
     return tiempoMinutos;
 }
 

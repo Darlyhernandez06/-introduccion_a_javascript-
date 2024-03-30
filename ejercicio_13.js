@@ -1,15 +1,19 @@
 // 13. Escribir un programa que lea 4 números y calcule la media. 
 
 function calcularMedia() {
+    // Obtener los cuatro números ingresados por el usuario
     let Numero1 = parseFloat(document.getElementById("num1").value);
     let Numero2 = parseFloat(document.getElementById("num2").value);
     let Numero3 = parseFloat(document.getElementById("num3").value);
     let Numero4 = parseFloat(document.getElementById("num4").value);
 
+    // Calcular la media de los números
     let media = (Numero1 + Numero2 + Numero3 + Numero4) / 4;
 
-    document.getElementById("resultado").innerText = "La media de los números ingresados es:" + media;
+    // Mostrar el resultado en el HTML
+    document.getElementById("resultado").innerText = "La media de los números ingresados es: " + media;
 }
+
 // EXPLICACION DEL EJERCICIO 
 
 // function calcularMedia() {: Esta línea define una función llamada calcularMedia(), que se encargará de calcular la media de los números ingresados 

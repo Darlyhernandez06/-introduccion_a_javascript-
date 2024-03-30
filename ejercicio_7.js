@@ -6,22 +6,31 @@
 // escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo de impositivo que le corresponde.
 
 function calcularImpuesto() {
+    // Obtener el valor de la renta ingresado por el usuario
     let renta = parseInt(document.getElementById("rentaInput").value);
     let tipoImpositivo;
     let resultadoElement = document.getElementById("resultado");
 
+    // Determinar el tipo impositivo según el valor de la renta
     if (renta >= 10000 && renta < 20000) {
+        // Si la renta está entre 10000 y 19999, el tipo impositivo es del 5%
         tipoImpositivo = "5%";
     } else if (renta >= 20000 && renta < 35000){
+        // Si la renta está entre 20000 y 34999, el tipo impositivo es del 10%
         tipoImpositivo = "10%";
-    }else if (renta >= 35000 && renta < 60000 ){
+    } else if (renta >= 35000 && renta < 60000 ){
+        // Si la renta está entre 35000 y 59999, el tipo impositivo es del 20%
         tipoImpositivo = "20%";
-    }else if (renta >= 60000 ){
+    } else if (renta >= 60000 ){
+        // Si la renta es igual o mayor a 60000, el tipo impositivo es del 45%
         tipoImpositivo = "45%";
-    }else  {
+    } else  {
+        // Si la renta es menor a 10000, no se aplica impuesto
         tipoImpositivo = "No se aplica impuesto para esta renta.";
     }
-    document.getElementById("resultado").innerText = "El tipo impositivo que le corresponde es: " + tipoImpositivo;
+    
+    // Paso 4: Mostrar el tipo impositivo correspondiente
+    resultadoElement.innerText = "El tipo impositivo que le corresponde es: " + tipoImpositivo;
 }
 
 // EXPLICACION DEL EJERCICIO 

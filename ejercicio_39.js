@@ -3,16 +3,20 @@
 // permita ir generando presupuestos para cada cliente. 
 
 function calcularPresupuesto() {
+    // Solicitar al usuario que ingrese la cantidad de metros cuadrados y el precio por metro cuadrado
     const metrosCuadrados = parseFloat(prompt("Ingrese la cantidad de metros cuadrados a pintar:"));
     const precioPorMetro = parseFloat(prompt("Ingrese el precio por metro cuadrado:"));
 
+    // Verificar si los valores ingresados son válidos
     if (isNaN(metrosCuadrados) || isNaN(precioPorMetro) || metrosCuadrados <= 0 || precioPorMetro <= 0) {
         alert("Por favor, ingrese valores válidos para metros cuadrados y precio por metro.");
         return;
     }
 
+    // Calcular el costo total del trabajo de pintura
     const costoTotal = metrosCuadrados * precioPorMetro;
 
+    // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").textContent = "El costo total del trabajo de pintura es: $" + costoTotal.toFixed(2);
 }
 

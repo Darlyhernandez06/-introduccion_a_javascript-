@@ -1,8 +1,11 @@
 // 37. Un camión transporta 25 cajas de repuestos de carros. Si cada caja pesa 748 Kg ¿cuántos Kg transporta? 
 
 function calcularPesoTransporte() {
-    const Cajas = 25; // Número de cajas de repuestos
-    const pesodeCaja = 748; // Peso de cada caja en Kg
+    // Número de cajas de repuestos
+    const Cajas = 25; 
+
+    // Peso de cada caja en Kg
+    const pesodeCaja = 748; 
 
     // Calcular el peso total multiplicando el número de cajas por el peso de cada caja
     const pesoTotal = Cajas * pesodeCaja;

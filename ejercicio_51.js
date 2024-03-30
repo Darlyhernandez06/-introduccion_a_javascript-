@@ -2,16 +2,20 @@
 // los $130.000 el descuento será del 15%, de lo contrario no hay descuento. 
 
 function calcularPago() {
+    // Obtener el consumo ingresado por el usuario
     let consumo = parseFloat(document.getElementById("consumo").value);
     let descuento = 0;
     let totalPagado = 0;
 
+    // Calcular el descuento si el consumo supera los $130,000
     if (consumo > 130000) {
         descuento = consumo * 0.15;
     } 
 
+    // Calcular el total a pagar restando el descuento del consumo
     totalPagado = consumo - descuento;
 
+    // Crear el contenido HTML para mostrar el resultado
     let resultadoHTML = '<p>Monto del consumo: $' + consumo.toFixed(2) + '</p>';
     if (descuento > 0) {
         resultadoHTML += '<p>Descuento aplicado: $' + descuento.toFixed(2) + '</p>';
@@ -20,6 +24,7 @@ function calcularPago() {
     }
     resultadoHTML += '<p>Total a pagar: $' + totalPagado.toFixed(2) + '</p>';
 
+    // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
 

@@ -7,8 +7,10 @@ function verificarParImpar() {
 
     // Verificar si el número es par o impar
     if (numero % 2 === 0){
+        // Si el número es par, mostrar "es un número par."
         resultadoElement.textContent = `${numero} es un número par.`;
     } else { 
+        // Si el número es impar, mostrar "es un número impar."
         resultadoElement.textContent = `${numero} es un número impar.`;
    }
 }

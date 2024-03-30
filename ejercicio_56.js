@@ -3,7 +3,7 @@
 // un interés anual de 4%. Al final mostrar el saldo final y el interés pagado. 
 
 function BancoIntereses () {
-     // Obtener el saldo ingresado por el usuario
+    // Obtener el saldo ingresado por el usuario
     let Saldo = parseFloat(document.getElementById("saldo").value);
 
     // Inicializar la variable para almacenar el interés

@@ -3,15 +3,19 @@
 // a.  rc((x2-x1)^2 + (y2-y1)^2). 
 
 function calcularDistancia() {
+    // Obtener las coordenadas de los puntos desde los inputs HTML
     let x1 = parseFloat(document.getElementById("x1").value);
     let y1 = parseFloat(document.getElementById("y1").value);
     let x2 = parseFloat(document.getElementById("x2").value);
     let y2 = parseFloat(document.getElementById("y2").value);
 
+    // Calcular la distancia entre los puntos utilizando la fórmula de distancia euclidiana
     let distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
+    // Mostrar la distancia calculada en el elemento HTML correspondiente
     document.getElementById("resultado").textContent = "La distancia entre los puntos es: " + distancia.toFixed(2);
 }
+
 
 // EXPLICACION DEL EJERCICIO
 

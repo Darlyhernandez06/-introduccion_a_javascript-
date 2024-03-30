@@ -1,13 +1,15 @@
 // 53.  Calcular el valor total del valor de 5 productos, el IVA y el subtotal, visualizar los resultados 
 // de: Iva, Subtotal y Total de la compra de los artículos.
 
-function CalcularTotal (){
+function CalcularTotal() {
+    // Obtener los valores de los productos desde el formulario
     let producto1 = parseFloat(document.getElementById("producto1").value);
     let producto2 = parseFloat(document.getElementById("producto2").value);
     let producto3 = parseFloat(document.getElementById("producto3").value);
     let producto4 = parseFloat(document.getElementById("producto4").value);
     let producto5 = parseFloat(document.getElementById("producto5").value);
 
+    // Calcular el subtotal sumando el valor de todos los productos
     let subtotal = producto1 + producto2 + producto3 + producto4 + producto5;
 
     // Calcular el IVA (asumimos un 19%)
@@ -16,11 +18,12 @@ function CalcularTotal (){
     // Calcular el total de la compra sumando el subtotal y el IVA
     let TotalCompra = subtotal + iva;
 
-    // Mostrar los resultados en la página
+    // Crear el contenido HTML para mostrar los resultados
     let resultadoHTML = '<p>Subtotal: $' + subtotal.toFixed(2) + '</p>';
     resultadoHTML += '<p>IVA (19%): $' + iva.toFixed(2) + '</p>';
     resultadoHTML += '<p>Total de la compra: $' + TotalCompra.toFixed(2) + '</p>';
-  
+
+    // Mostrar los resultados en el elemento con id "resultado"
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
 

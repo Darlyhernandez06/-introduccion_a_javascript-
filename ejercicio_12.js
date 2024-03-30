@@ -1,13 +1,16 @@
 // 12. Escribir un programa que calcule el área de un rectángulo: 
 
 function calcularAreaRectángulo() {
+    // Obtener la base y la altura ingresadas por el usuario
     let Base = parseFloat(document.getElementById("baseInput").value);
     let Altura = parseFloat(document.getElementById("alturaInput").value);
     let resultadoElement = document.getElementById("resultado");
 
+    // Calcular el área del rectángulo
     let area = Base * Altura;
 
-    document.getElementById("resultado").innerText = "El área del rectangulo es:" + area.toFixed(2);
+    // Mostrar el resultado en el HTML con dos decimales
+    document.getElementById("resultado").innerText = "El área del rectángulo es: " + area.toFixed(2);
 }
 
 // EXPLICACION DEL EJERCICIO 

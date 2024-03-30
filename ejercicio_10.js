@@ -8,7 +8,9 @@
 // en todas las pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana 
 // o no y todos los ingredientes que lleva. 
 
+// Esta función se encarga de mostrar el tipo de pizza y los ingredientes seleccionados
 function mostrarIngredientes() {
+    // Obtener el tipo de pizza seleccionado y los elementos del DOM necesarios
     let tipoPizza = document.getElementById("tipoPizzaSelect").value;
     let ingredientesSelect = document.getElementById("ingredientesPizzaSelect");
     let resultadoElement = document.getElementById("resultado");
@@ -16,7 +18,7 @@ function mostrarIngredientes() {
     // Limpiar el contenido del resultado
     resultadoElement.innerHTML = "";
 
-    // Obtener los ingredientes seleccionados
+    // Obtener los ingredientes seleccionados del select
     let ingredientesSeleccionados = [];
     for (let i = 0; i < ingredientesSelect.options.length; i++) {
         let opcion = ingredientesSelect.options[i];
@@ -25,21 +27,25 @@ function mostrarIngredientes() {
         }
     }
 
-    // Mostrar el tipo de pizza y los ingredientes seleccionados
+    // Mostrar el tipo de pizza y los ingredientes base
     resultadoElement.innerHTML = tipoPizza.charAt(0).toUpperCase() + tipoPizza.slice(1) + " <br>Ingredientes: Mozzarella, Tomate";
+
+    // Mostrar los ingredientes seleccionados (si hay alguno)
     if (ingredientesSeleccionados.length > 0) {
         resultadoElement.innerHTML += ", " + ingredientesSeleccionados.join(", ");
     }
-    
+
     // Mostrar el contenedor de ingredientes
-    document.getElementById("ingredientesContainer").style.display = "block";  
+    document.getElementById("ingredientesContainer").style.display = "block";
 }
 
-// Inicializar los ingredientes basados en el tipo de pizza seleccionado
+// Esta función se encarga de agregar las opciones de ingredientes dependiendo del tipo de pizza seleccionado
 document.getElementById("tipoPizzaSelect").addEventListener("change", function() {
     let tipoPizza = this.value;
     let ingredientesSelect = document.getElementById("ingredientesPizzaSelect");
     ingredientesSelect.innerHTML = "";
+
+    // Agregar las opciones de ingredientes basados en el tipo de pizza seleccionado
     if (tipoPizza === "vegetariana") {
         agregarOpcion(ingredientesSelect, "pimiento", "Pimiento");
         agregarOpcion(ingredientesSelect, "tofu", "Tofu");
@@ -50,12 +56,15 @@ document.getElementById("tipoPizzaSelect").addEventListener("change", function()
     }
 });
 
+// Esta función agrega una opción al elemento select
 function agregarOpcion(selectElement, value, text) {
     var option = document.createElement("option");
     option.value = value;
     option.text = text;
     selectElement.appendChild(option);
 }
+
+
 
 // EXPLICACION DEL EJERCICIO
 

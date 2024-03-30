@@ -3,6 +3,7 @@
 // excepciones y el mensaje debe ser personalizado.
 
 function dividir() {
+    // Obtener los números ingresados por el usuario
     let numero1 = parseFloat(document.getElementById("numero1").value);
     let numero2 = parseFloat(document.getElementById("numero2").value);
     let resultadoElement = document.getElementById("resultado");
@@ -19,10 +20,11 @@ function dividir() {
         // Mostrar el resultado
         resultadoElement.textContent = `El resultado de la división es: ${resultado}`;
     } catch (error) {
-        // Manejar la excepción
+        // Manejar la excepción si se produce un error
         resultadoElement.textContent = error.message;
     }
 }
+
 
 // EXPLICACION DEL EJERCICIO 
 

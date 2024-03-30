@@ -4,10 +4,14 @@
 // cantidad de gramos de harina para hacer el bizcocho es?
 
 function calcularBizcocho()  {
-    const gramosharina = 100; // Cantidad de harina en gramos que se utiliza como referencia en la receta
-    const cacaoPor100Harina = 10; // Gramos de cacao por cada 100 gramos de harina
+    // Cantidad de harina en gramos que se utiliza como referencia en la receta
+    const gramosharina = 100; 
 
-    const preparación = (20 * gramosharina ) / cacaoPor100Harina; //Calcular la cantidad de harina usando regla de tres
+    // Gramos de cacao por cada 100 gramos de harina
+    const cacaoPor100Harina = 10; 
+
+    //Calcular la cantidad de harina usando regla de tres
+    const preparación = (20 * gramosharina ) / cacaoPor100Harina; 
 
     // Mostrar el resultado
     document.getElementById("resultado").textContent = "La cantidad de gramos de harina necesaria para hacer el bizcocho es:" + preparación + "gramos.";

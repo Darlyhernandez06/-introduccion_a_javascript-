@@ -3,24 +3,29 @@
 // trabajada se le paga a $10000. Para calcular su pago es necesario conocer el total de 
 // horas trabajadas. 
 
-function EmpresaPaga (){
-    let TipodeEmpleado = document.getElementById("tipoEmpleado").value;
+function EmpresaPaga() {
+    // Obtener el tipo de empleado y las horas trabajadas desde el formulario
+    let TipoDeEmpleado = document.getElementById("tipoEmpleado").value;
     let HorasTrabajadas = parseFloat(document.getElementById("horasTrabajadas").value);
     let pagoPorHora = 0;
 
-    if (TipodeEmpleado === "planta") {
+    // Determinar el pago por hora según el tipo de empleado
+    if (TipoDeEmpleado === "planta") {
         pagoPorHora = 20000;
-    } else if (TipodeEmpleado === "administrativo"){
+    } else if (TipoDeEmpleado === "administrativo") {
         pagoPorHora = 10000;
     }
 
-    let TotalPago = pagoPorHora *  HorasTrabajadas;
+    // Calcular el total a pagar multiplicando las horas trabajadas por el pago por hora
+    let TotalPago = pagoPorHora * HorasTrabajadas;
 
-    let resultadoHTML = '<p>Tipo de empleado: ' + TipodeEmpleado+ '</p>';
+    // Crear el contenido HTML para mostrar el resultado
+    let resultadoHTML = '<p>Tipo de empleado: ' + TipoDeEmpleado + '</p>';
     resultadoHTML += '<p>Horas trabajadas: ' + HorasTrabajadas + '</p>';
     resultadoHTML += '<p>Pago por hora: $' + pagoPorHora.toFixed(2) + '</p>';
     resultadoHTML += '<p>Total a pagar: $' + TotalPago.toFixed(2) + '</p>';
-  
+
+    // Mostrar el resultado en el elemento con id "resultado"
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
 

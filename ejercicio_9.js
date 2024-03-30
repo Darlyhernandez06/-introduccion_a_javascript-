@@ -5,21 +5,27 @@
 // y si es mayor de 18 años, 10€. 
 
 function calcularPrecioEntrada() {
+    // Obtener la edad ingresada por el usuario
     let edad = parseInt(document.getElementById("edadInput").value);
     let precio;
     let resultadoElement = document.getElementById("resultado");
 
+    // Calcular el precio de la entrada según la edad
     if (edad < 4) {
+        // Si la edad es menor que 4, el precio es 0 y se muestra un mensaje de entrada gratis
         precio = 0; 
         resultadoElement.innerText = "Su precio es 0, puede ingresar gratis";
-    }else if (edad >= 4 && edad <=18 ) {
+    } else if (edad >= 4 && edad <= 18) {
+        // Si la edad está entre 4 y 18 años, el precio es 5€
         precio = 5;
         resultadoElement.innerText = "El precio de la entrada es: 5€";
-    }else if (edad >=18 ) {
+    } else if (edad > 18) {
+        // Si la edad es mayor de 18 años, el precio es 10€
         precio = 10;
         resultadoElement.innerText = "El precio de la entrada es: 10€";
     }
 }
+
 
 // EXPLICACION DEL EJERCICIO 
 

@@ -14,10 +14,16 @@ function verificarFortaleza(contrasena) {
 }
 
 function validarContraseña() {
+    // Obtener la contraseña ingresada por el usuario desde el input HTML
     let contraseña = document.getElementById("contrasena").value;
+    
+    // Verificar la fortaleza de la contraseña y obtener el mensaje correspondiente
     let mensaje = verificarFortaleza(contraseña);
+    
+    // Mostrar el mensaje de validación en el elemento HTML
     document.getElementById("mensaje").innerText = mensaje;
 }
+
 
 // EXPLICACION DEL EJERCICIO
 

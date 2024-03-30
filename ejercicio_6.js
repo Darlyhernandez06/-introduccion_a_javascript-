@@ -4,17 +4,27 @@
 // pregunte al usuario su nombre y sexo y muestre por pantalla el grupo al que corresponde. 
 
 function determinarGrupo() {
+    // Obtener el nombre y el sexo ingresados por el usuario
     let nombre = document.getElementById("nombreInput").value;
     let sexo = document.getElementById("sexoInput").value;
     let resultadoElement = document.getElementById("resultado");
 
+    // Determinar el grupo según el nombre y el sexo
+    let grupo;
     if ((sexo === "femenino" && nombre < 'm' ) ||  (sexo === "masculino" && nombre > 'n')) {
+        // Si el sexo es femenino y el nombre comienza antes de 'm',
+        // o si el sexo es masculino y el nombre comienza después de 'n',
+        // entonces pertenece al Grupo A.
         grupo = "Grupo A";
     } else {
+        // En caso contrario, pertenece al Grupo B.
         grupo = "Grupo B";
     }
-    document.getElementById("resultado").innerText = "usted pertenece al" + grupo + ".";
+    
+    // Mostrar el resultado
+    resultadoElement.innerText = "Usted pertenece al " + grupo + ".";
 }
+
 
 // EXPLICACION DEL EJERCICIO 
 

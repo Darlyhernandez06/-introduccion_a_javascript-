@@ -8,7 +8,8 @@ function convertirCelsiusAFahrenheit() {
     // Convertir grados Celsius a grados Fahrenheit
     let Fahrenheit = (Celsius * 9 / 5) + 32;
 
-    document.getElementById("resultado").innerText= Celsius+ " °C grados Celsius son" + Fahrenheit.toFixed(2) + " grados Fahrenheit °F.";
+    // Mostrar el resultado en el HTML
+    document.getElementById("resultado").innerText = Celsius + " °C grados Celsius son " + Fahrenheit.toFixed(2) + " grados Fahrenheit °F.";
 }
 
 // EXPLICACION DEL EJERCICIO

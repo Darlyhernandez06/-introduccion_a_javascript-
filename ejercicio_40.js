@@ -3,17 +3,19 @@
 // nacieron. Realice el código que representen el algoritmo para solucionar este problema. 
 
 function calcularEdad() {
-    const AñodeNacimiento = parseInt(prompt("Ingrese el año de nacimiento:"));
+    // Solicitar al usuario que ingrese el año de nacimiento
+    const añoDeNacimiento = parseInt(prompt("Ingrese el año de nacimiento:"));
 
     // Obtener el año actual
-    const AñoActual = new Date().getFullYear();
+    const añoActual = new Date().getFullYear();
 
     // Calcular la edad restando el año de nacimiento al año actual
-    const edad = AñoActual - AñodeNacimiento; 
+    const edad = añoActual - añoDeNacimiento; 
 
-    // Mostrar el resultado
+    // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").textContent = "La edad de la persona es: " + edad + " años.";
 }
+
 
 // EXPLICACION DEL EJERCICIO
 

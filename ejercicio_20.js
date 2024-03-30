@@ -6,22 +6,27 @@
 // Donde: a,b,c son los coeficientes de la ecuacion cuadratica, ± indica que hay dos soluciones posibles,
 // b2−4ac es la parte dentro de la razi cuadrada
 
-
 function encontrarRaices() {
+    // Obtener los coeficientes A, B y C desde los elementos de entrada HTML
     let A = parseFloat(document.getElementById("coeficienteA").value);
     let B = parseFloat(document.getElementById("coeficienteB").value);
     let C = parseFloat(document.getElementById("coeficienteC").value);
 
+    // Calcular el discriminante de la ecuación cuadrática
     let discriminante = B * B - 4 * A * C;
 
+    // Determinar el tipo de raíces y mostrar el resultado en el HTML
     if (discriminante > 0) {
+        // Dos raíces reales distintas
         let raiz1 = (-B + Math.sqrt(discriminante)) / (2 * A);
         let raiz2 = (-B - Math.sqrt(discriminante)) / (2 * A);
         document.getElementById('resultado').innerText = "Las raíces son: " + raiz1.toFixed(2) + " y " + raiz2.toFixed(2);
     } else if (discriminante === 0) {
+        // Raíz doble
         let raiz = -B / (2 * A);
         document.getElementById('resultado').innerText = "La raíz doble es: " + raiz.toFixed(2);
     } else {
+        // Sin raíces reales
         document.getElementById('resultado').innerText = "La ecuación no tiene raíces reales.";
     }
 }

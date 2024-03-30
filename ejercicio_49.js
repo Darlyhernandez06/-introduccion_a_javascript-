@@ -1,7 +1,7 @@
 // 49. Escriba un algoritmo que calcule el área de un rectángulo siempre y cuando los lados sean positivos: área triangulo= lado * lado 
 
 function AreaRectangulo() {
-     // Obtener los valores de los lados del rectángulo ingresados por el usuario
+    // Obtener los valores de los lados del rectángulo ingresados por el usuario
     let lado1 = parseFloat(document.getElementById("lado1").value);
     let lado2 = parseFloat(document.getElementById("lado2").value);
 
