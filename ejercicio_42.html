@@ -44,12 +44,18 @@
 <body>
     <div class="container">
         <h1>Calcular Monto Total de Venta</h1>
-        <label for="cantidadLibros">Cantidad de libros vendidos:</label>
-        <input type="number" id="cantidadLibros" placeholder="Ingrese la cantidad de libros">
-        <label for="cantidadCuadernos">Cantidad de cuadernos vendidos:</label>
-        <input type="number" id="cantidadCuadernos" placeholder="Ingrese la cantidad de cuadernos">
-        <label for="cantidadLapiceros">Cantidad de lapiceros vendidos:</label>
-        <input type="number" id="cantidadLapiceros" placeholder="Ingrese la cantidad de lapiceros">
+        <div>
+            <label for="cantidadLibros">Cantidad de libros vendidos:</label>
+            <input type="number" id="cantidadLibros" placeholder="Ingrese la cantidad de libros">
+        </div>
+        <div>
+            <label for="cantidadCuadernos">Cantidad de cuadernos vendidos:</label>
+            <input type="number" id="cantidadCuadernos" placeholder="Ingrese la cantidad de cuadernos">
+        </div>
+        <div>
+            <label for="cantidadLapiceros">Cantidad de lapiceros vendidos:</label>
+            <input type="number" id="cantidadLapiceros" placeholder="Ingrese la cantidad de lapiceros">
+        </div>
         <button onclick="PapeleriaVenta()">Calcular Monto Total de Venta</button>
         <br><br>
         <div id="resultado"></div>

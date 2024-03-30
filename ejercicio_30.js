@@ -1,12 +1,12 @@
 // 30. Comprobar la fortaleza de una contraseña teniendo en cuenta que debe tener entre 8 y 12 
 // caracteres, y al menos una mayúscula, una minúscula, y un dígito. 
 
-function verificarFortaleza(Contraseña) {
+function verificarFortaleza(contrasena) {
     // Expresión regular para verificar si la contraseña cumple con los requisitos
     let expresion = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,12}$/; 
     
     // Verificar si la contraseña cumple con la expresión regular
-    if (expresion.test(Contraseña)) {
+    if (expresion.test(contrasena)) {
         return "La contraseña es segura.";
     } else {
         return "La contraseña no cumple con los requisitos.";
@@ -14,8 +14,8 @@ function verificarFortaleza(Contraseña) {
 }
 
 function validarContraseña() {
-    let contraseña = document.getElementById("Contraseña").value;
-    let mensaje = verificarFortaleza(contraseña );
+    let contraseña = document.getElementById("contrasena").value;
+    let mensaje = verificarFortaleza(contraseña);
     document.getElementById("mensaje").innerText = mensaje;
 }
 

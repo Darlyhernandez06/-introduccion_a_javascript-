@@ -38,19 +38,25 @@
 <body>
     <div class="container">
         <h1>Menú de Pizza</h1>
-        <label for="tipoPizza">¿Qué tipo de pizza desea? (vegetariana/no vegetariana)</label>
-        <select id="tipoPizzaSelect">
-            <option value="vegetariana">Vegetariana</option>
-            <option value="no_vegetariana">No vegetariana</option>
-        </select>
-        <br><br>
+        <div>
+            <label for="tipoPizza">¿Qué tipo de pizza desea? (vegetariana/no vegetariana)</label>
+            <select id="tipoPizzaSelect">
+                <option value="vegetariana">Vegetariana</option>
+                <option value="no_vegetariana">No vegetariana</option>
+            </select>
+        </div>
         <div id="ingredientesContainer" style="display: none;">
+            <br>
             <label for="ingredientesPizza">Elija un ingrediente:</label>
             <select id="ingredientesPizzaSelect"></select>
         </div>
-        <br><br>
-        <button onclick="mostrarIngredientes()">Mostrar Ingredientes</button>
-        <p id="resultado"></p>
+        <div>
+            <br>
+            <button onclick="mostrarIngredientes()">Mostrar Ingredientes</button>
+        </div>
+        <div>
+            <p id="resultado"></p>
+        </div>
     </div>
     
     <script src="ejercicio_10.js" class="js"></script>

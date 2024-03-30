@@ -44,10 +44,17 @@
 <body>
     <div class="container">
         <h1>Evaluación de Rendimiento</h1>
-        <label for="puntuacion">Ingrese la puntuación del empleado:</label>
-        <input type="number" step="0.01" id="puntuacionInput">
-        <button onclick="evaluarRendimiento()">Evaluar</button>
-        <p id="resultado"></p>
+        <p>Los puntos pueden ser 0.0, 0.4, 0.6 o más</p>
+        <div>
+            <label for="puntuacion">Ingrese la puntuación del empleado:</label>
+            <input type="number" step="0.01" id="puntuacionInput">
+        </div>
+        <div>
+            <button onclick="evaluarRendimiento()">Evaluar</button>
+        </div>
+        <div>
+            <p id="resultado"></p>
+        </div>
     </div>
     
     <script src="ejercicio_8.js" class="js"></script>

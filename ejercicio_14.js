@@ -1,6 +1,6 @@
 // 14. Escribir un programa que calcule el área de un triángulo. 
 
-function calcularAreaTtriángulo() {
+function calcularAreaTriangulo() {
     let Base = parseFloat(document.getElementById("baseInput").value);
     let Altura = parseFloat(document.getElementById("alturaInput").value);
     let resultadoElement = document.getElementById("resultado");

@@ -44,10 +44,16 @@
 <body>
     <div class="container">
         <h1>Validación de Edad</h1>
-        <label for="edad">Ingrese su edad:</label>
-        <input type="number" id="edadInput">
-        <button onclick="validarEdad()">Validar</button>
-        <p id="resultado"></p>
+        <div>
+            <label for="edad">Ingrese su edad:</label>
+            <input type="number" id="edadInput">
+        </div>
+        <div>
+            <button onclick="validarEdad()">Validar</button>
+        </div>
+        <div id="resultadoContainer">
+            <p id="resultado"></p>
+        </div>
     </div>
 
     <script src="ejercicio_1.js" class="js"></script>

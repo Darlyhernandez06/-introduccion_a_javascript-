@@ -44,16 +44,24 @@
 <body>
     <div class="container">
         <h1>Calculadora Básica</h1>
-        <label for="numero_1">Primer número:</label>
-        <input type="number" id="num1"><br>
-        <label for="numero_2">Segundo número:</label>
-        <input type="number" id="num2"><br>
-        <button onclick="realizarOperaciones()">Calcular</button>
+        <div>
+            <label for="numero_1">Primer número:</label>
+            <input type="number" id="num1"><br>
+        </div>
+        <div>
+            <label for="numero_2">Segundo número:</label>
+            <input type="number" id="num2"><br>
+        </div>
+        <div>
+            <button onclick="realizarOperaciones()">Calcular</button>
+        </div>
         <h2>Resultados:</h2>
-        <p id="suma"></p>
-        <p id="resta"></p>
-        <p id="multiplicacion"></p>
-        <p id="division"></p>
+        <div>
+            <p id="suma"></p>
+            <p id="resta"></p>
+            <p id="multiplicacion"></p>
+            <p id="division"></p>
+        </div>
     </div>
     
     <script src="ejercicio_11.js" class="js"></script>
