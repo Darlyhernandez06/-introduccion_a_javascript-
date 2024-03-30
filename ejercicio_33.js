@@ -1,4 +1,4 @@
-// 32. 
+// 33. Calcular la edad de una madre en el momento que dio a luz a alguno de sus hijos. 
 
 function calcularEdadMadre() {
     // Obtener la fecha de nacimiento de la madre y del hijo
