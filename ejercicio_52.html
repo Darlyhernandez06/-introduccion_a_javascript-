@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Pagos en Restaurante</title>
+    <title>Calculadora de Pago de Empleados</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,17 +43,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de Pagos en Restaurante</h1>
+        <h1>Calculadora de Pago de Empleados</h1>
         <div>
-          <label for="consumo">Ingrese el monto del consumo:</label>
-          <input type="number" id="consumo">
-          <button onclick="calcularPago()">Calcular</button>
+          <label for="tipoEmpleado">Tipo de empleado:</label>
+          <select id="tipoEmpleado">
+            <option value="planta">Planta</option>
+            <option value="administrativo">Administrativo</option>
+          </select>
         </div>
+        <div>
+          <label for="horasTrabajadas">Horas trabajadas:</label>
+          <input type="number" id="horasTrabajadas">
+        </div>
+        <button onclick="EmpresaPaga()">Calcular Pago</button>
         <br><br>
         <div id="resultado"></div>
     </div>
     
-    <script src="ejercicio_51.js" class="js"></script>  
+    <script src="ejercicio_52.js" class="js"></script>  
 </body>
 </html>
+
 
