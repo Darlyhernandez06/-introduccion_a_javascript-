@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Letras</title>
+    <title>Eco de Usuario</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,22 +43,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Contador de Letras</h1>
+        <h1>Eco de Usuario</h1>
         <div>
-            <label for="fraseInput">Ingrese una frase:</label>
-            <input type="text" id="fraseInput">
+            <label for="inputUsuario">Escribe algo:</label>
+            <input type="text" id="inputUsuario">
         </div>
         <div>
-            <label for="letraInput">Ingrese una letra:</label>
-            <input type="text" id="letraInput" maxlength="1">
-        </div>
-        <div>
-            <button onclick="contarLetra()">Contar</button>
+            <button onclick="mostrarEco()">Enviar</button>
         </div>
         <br><br>
         <div id="resultado"></div>
     </div>
 
-    <script src="ejercicio_73.js" class="js"></script>   
+    <script src="ejercicio_74.js" class="js"></script> 
 </body>
 </html>
