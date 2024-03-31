@@ -4,7 +4,7 @@
 // donde a, b, y c son las longitudes de los semiejes del elipsoide.
 
 function calcularVolumenElipsoide() {
-     // Obtener los valores de los semiejes a, b y c del elipsoide
+    // Obtener los valores de los semiejes a, b y c del elipsoide
     let A = parseFloat(document.getElementById("semiejeA").value);
     let B = parseFloat(document.getElementById("semiejeB").value);
     let C = parseFloat(document.getElementById("semiejeC").value);

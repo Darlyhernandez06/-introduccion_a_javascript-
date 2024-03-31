@@ -11,10 +11,10 @@ function calcularBizcocho()  {
     const cacaoPor100Harina = 10; 
 
     //Calcular la cantidad de harina usando regla de tres
-    const preparación = (20 * gramosharina ) / cacaoPor100Harina; 
+    const preparacion = (20 * gramosharina ) / cacaoPor100Harina; 
 
     // Mostrar el resultado
-    document.getElementById("resultado").textContent = "La cantidad de gramos de harina necesaria para hacer el bizcocho es:" + preparación + "gramos.";
+    document.getElementById("resultado").textContent = "La cantidad de gramos de harina necesaria para hacer el bizcocho es:" + preparacion + "gramos.";
 }
 
 // EXPLICACION DEL EJERCICIO

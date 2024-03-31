@@ -12,10 +12,10 @@ function RestarleNumero () {
         // Realizar la resta si es posible
         let resultado = Numero1 - Numero2;
         // Mostrar el resultado en la página
-      document.getElementById("resultado").textContent = 'La resta es: ' + resultado;
+      document.getElementById("resultado").textContent = "La resta es: " + resultado;
     }else {
         // Mostrar un mensaje indicando que la operación no es posible
-        document.getElementById("resultado").textContent = 'La operación no es posible, el primer número no es mayor que el segundo.';
+        document.getElementById("resultado").textContent = "La operación no es posible, el primer número no es mayor que el segundo.";
     }
 }
 

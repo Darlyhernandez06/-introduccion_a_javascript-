@@ -20,8 +20,8 @@ function BancoIntereses () {
      let saldoFinal = Saldo + interes;
   
     // Mostrar el resultado en la página
-    let resultadoHTML = '<p>Saldo final: $' + saldoFinal.toFixed(2) + '</p>';
-    resultadoHTML += '<p>Interés pagado: $' + interes.toFixed(2) + '</p>';
+    let resultadoHTML = "<p>Saldo final: $" + saldoFinal.toFixed(2) + "</p>";
+    resultadoHTML += "<p>Interés pagado: $" + interes.toFixed(2) + "</p>";
       
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }

@@ -8,7 +8,7 @@ function invertirFrase() {
     let FraseInvertida = Frase.split('').reverse().join('');
 
     // Mostrar la frase invertida
-    document.getElementById("resultado").textContent = "Frase invertida: " + FraseInvertida;
+    document.getElementById("resultado").textContent = "Frase invertida:" + FraseInvertida;
 }
 
 // EXPLICACION DEL EJERCICIO

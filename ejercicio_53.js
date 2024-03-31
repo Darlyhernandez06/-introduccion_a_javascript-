@@ -19,9 +19,9 @@ function CalcularTotal() {
     let TotalCompra = subtotal + iva;
 
     // Crear el contenido HTML para mostrar los resultados
-    let resultadoHTML = '<p>Subtotal: $' + subtotal.toFixed(2) + '</p>';
-    resultadoHTML += '<p>IVA (19%): $' + iva.toFixed(2) + '</p>';
-    resultadoHTML += '<p>Total de la compra: $' + TotalCompra.toFixed(2) + '</p>';
+    let resultadoHTML = "<p>Subtotal: $" + subtotal.toFixed(2) + "</p>";
+    resultadoHTML += "<p>IVA (19%): $" + iva.toFixed(2) + "</p>";
+    resultadoHTML += "<p>Total de la compra: $" + TotalCompra.toFixed(2) + "</p>";
 
     // Mostrar los resultados en el elemento con id "resultado"
     document.getElementById("resultado").innerHTML = resultadoHTML;

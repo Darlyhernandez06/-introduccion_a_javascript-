@@ -13,9 +13,9 @@ function buscarCadenas() {
     
     // Mostrar las coincidencias encontradas
     if ( coincidencias2 ) {
-        document.getElementById('resultado').textContent = 'Cadenas encontradas:\n' +  coincidencias2 .join('\n');
+        document.getElementById("resultado").textContent = "Cadenas encontradas:\n" +  coincidencias2 .join("\n");
     } else {
-        document.getElementById('resultado').textContent = 'No se encontraron cadenas de comillas dobles.';
+        document.getElementById("resultado").textContent = "No se encontraron cadenas de comillas dobles.";
     }
 }
 

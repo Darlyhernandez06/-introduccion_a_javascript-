@@ -16,13 +16,13 @@ function calcularPago() {
     totalPagado = consumo - descuento;
 
     // Crear el contenido HTML para mostrar el resultado
-    let resultadoHTML = '<p>Monto del consumo: $' + consumo.toFixed(2) + '</p>';
+    let resultadoHTML = "<p>Monto del consumo: $" + consumo.toFixed(2) + "</p>";
     if (descuento > 0) {
-        resultadoHTML += '<p>Descuento aplicado: $' + descuento.toFixed(2) + '</p>';
+        resultadoHTML += "<p>Descuento aplicado: $" + descuento.toFixed(2) + "</p>";
     } else {
-        resultadoHTML += '<p>' + 'No hay descuento' + '</p>';
+        resultadoHTML += "<p>" + "No hay descuento" + "</p>";
     }
-    resultadoHTML += '<p>Total a pagar: $' + totalPagado.toFixed(2) + '</p>';
+    resultadoHTML += "<p>Total a pagar: $" + totalPagado.toFixed(2) + "</p>";
 
     // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").innerHTML = resultadoHTML;

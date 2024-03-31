@@ -5,7 +5,7 @@
 
 function TiendadeHelado() {
     // Obtener el tipo de membresía seleccionado
-    let Membresía = document.getElementById('tipoMembresia').value;
+    let Membresía = document.getElementById("tipoMembresia").value;
     let descuento = 0;
 
     // Determinar el descuento según el tipo de membresía
@@ -22,16 +22,16 @@ function TiendadeHelado() {
     }
 
     // Obtener el monto de la compra ingresado por el usuario
-    let montoCompra = parseFloat(document.getElementById('montoCompra').value);
+    let montoCompra = parseFloat(document.getElementById("montoCompra").value);
 
     // Calcular el monto a pagar con el descuento aplicado
     let montoConDescuento = montoCompra * (1 - descuento);
 
     // Crear el contenido HTML para mostrar los resultados
-    let resultadoHTML = '<p>Monto de la compra: $' + montoCompra.toFixed(2) + '</p>';
-    resultadoHTML += '<p>Tipo de membresía: ' + Membresía + '</p>';
-    resultadoHTML += '<p>Descuento aplicado: ' + (descuento * 100) + '%</p>';
-    resultadoHTML += '<p>Monto a pagar con descuento: $' + montoConDescuento.toFixed(2) + '</p>';
+    let resultadoHTML = "<p>Monto de la compra: $" + montoCompra.toFixed(2) + "</p>";
+    resultadoHTML += "<p>Tipo de membresía: " + Membresía + "</p>";
+    resultadoHTML += "<p>Descuento aplicado: " + (descuento * 100) + "%</p>";
+    resultadoHTML += "<p>Monto a pagar con descuento: $" + montoConDescuento.toFixed(2) + "</p>";
 
     // Mostrar los resultados en el elemento con id "resultado"
     document.getElementById("resultado").innerHTML = resultadoHTML;

@@ -20,10 +20,10 @@ function EmpresaPaga() {
     let TotalPago = pagoPorHora * HorasTrabajadas;
 
     // Crear el contenido HTML para mostrar el resultado
-    let resultadoHTML = '<p>Tipo de empleado: ' + TipoDeEmpleado + '</p>';
-    resultadoHTML += '<p>Horas trabajadas: ' + HorasTrabajadas + '</p>';
-    resultadoHTML += '<p>Pago por hora: $' + pagoPorHora.toFixed(2) + '</p>';
-    resultadoHTML += '<p>Total a pagar: $' + TotalPago.toFixed(2) + '</p>';
+    let resultadoHTML = "<p>Tipo de empleado: " + TipoDeEmpleado + "</p>";
+    resultadoHTML += "<p>Horas trabajadas: " + HorasTrabajadas + "</p>";
+    resultadoHTML += "<p>Pago por hora: $" + pagoPorHora.toFixed(2) + "</p>";
+    resultadoHTML += "<p>Total a pagar: $" + TotalPago.toFixed(2) + "</p>";
 
     // Mostrar el resultado en el elemento con id "resultado"
     document.getElementById("resultado").innerHTML = resultadoHTML;

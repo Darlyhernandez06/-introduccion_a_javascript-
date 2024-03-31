@@ -4,13 +4,13 @@
 
 function calcularEdad() {
     // Solicitar al usuario que ingrese el año de nacimiento
-    const añoDeNacimiento = parseInt(prompt("Ingrese el año de nacimiento:"));
+    const anoDeNacimiento = parseInt(prompt("Ingrese el año de nacimiento:"));
 
     // Obtener el año actual
-    const añoActual = new Date().getFullYear();
+    const anoActual = new Date().getFullYear();
 
     // Calcular la edad restando el año de nacimiento al año actual
-    const edad = añoActual - añoDeNacimiento; 
+    const edad = anoActual - anoDeNacimiento; 
 
     // Mostrar el resultado en el elemento HTML correspondiente
     document.getElementById("resultado").textContent = "La edad de la persona es: " + edad + " años.";

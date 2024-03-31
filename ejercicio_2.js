@@ -5,19 +5,19 @@
 
 function verificarContraseña() {
     // Almacenar la contraseña en una variable
-    const contraseñaGuardada = "Hachiko0612";
+    const contrasenaGuardada = "Hachiko0612";
 
     // Obtener la contraseña ingresada por el usuario y convertirla a minúsculas
-    let contraseñaIngresada = document.getElementById("contraseñaInput").value.toLowerCase();
+    let contrasenaIngresada = document.getElementById("contraseñaInput").value.toLowerCase();
 
     // Expresión regular para validar si la contraseña contiene solo caracteres alfanuméricos
     let expresionRegular = /^[a-zA-Z0-9]+$/;
 
     // Verificar si la contraseña ingresada cumple con la expresión regular
-    if (!expresionRegular.test(contraseñaIngresada)) {
+    if (!expresionRegular.test(contrasenaIngresada)) {
         document.getElementById("resultado").textContent = "Por favor, ingrese solo caracteres alfanuméricos.";
     } else { // Comparar la contraseña ingresada con la contraseña guardada (sin importar mayúsculas y minúsculas)
-        if (contraseñaIngresada === contraseñaGuardada.toLowerCase()) {
+        if (contrasenaIngresada === contrasenaGuardada.toLowerCase()) {
             document.getElementById("resultado").textContent = "¡Contraseña correcta! Puede acceder al sistema.";
         } else {
             document.getElementById("resultado").textContent = "¡Contraseña incorrecta! No puede acceder al sistema.";
