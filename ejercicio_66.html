@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inversión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px #FF00FF;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #FF00FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ab03ab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Inversión</h1>
+        <div>
+            <label for="cantidad">Cantidad a invertir:</label>
+            <input type="number" id="cantidad" placeholder="Ingrese la cantidad a invertir"><br><br>
+        </div>
+        <div>
+            <label for="interes">Interés anual (%):</label>
+            <input type="number" id="interes" placeholder="Ingrese el interés anual"><br><br>    
+        </div>
+        <div>
+            <label for="anios">Número de años:</label>
+            <input type="number" id="anios" placeholder="Ingrese el número de años"><br><br>      
+        </div>
+        <div>
+            <button onclick="ProgramaCantidadInvertir()">Calcular Capital</button>
+        </div>
+        <br><br>
+        <div id="resultado"></div>
+    </div>
+    
+    <script src="ejercicio_66.js" class="js"></script>
+</body>
+</html>
